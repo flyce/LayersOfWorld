@@ -1,0 +1,9 @@
+<view class="container">
+    <view>
+        <image src="" />
+    </view>
+    <block wx:for="{{fences}}" wx:key="index">
+        <v-fence bind:celltap="onCellTap" x="{{index}}" fence="{{item}}"/>
+    </block>
+    <view class="counter-container"></view>
+</view>

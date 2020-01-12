@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+
+ <l-loadmore show type="{{loadingType}}" end-text="- 鸢尾工作室 产品 -">
+    <view class="container" slot="content">
+        <image class="top-theme" src="{{themeA.entrance_img}}" />
+
+        <swiper class="swiper" indicator-dots autoplay circular indicator-active-color="#157658">
+        <block wx:for="{{bannerB.items}}" wx:key="index">
+            <swiper-item>
+                <image class="swiper" src="{{item.img}}" />
+            </swiper-item>
+        </block>
+        </swiper>
+
+        <v-category-grid category="{{categoryC}}"/>
+
+        <image class="activity" src="{{activityD.entrance_img}}" />
+
+        <v-spu-scroll wx:if="{{themeE.online}}" theme="{{themeE}}" spu-list="{{themeESpu}}" />
+
+        <image class="quality" src="{{themeF.entrance_img}}" />
+
+        <v-hot-list banner="{{bannerG}}" />
+
+        <image class="fashion" src="{{themeH.entrance_img}}" />
+
+        <view class="spu-bottom">
+            <image class="title-spu-bottom" src="/imgs/home/title@interest.png"/>
+            <l-water-flow generic:l-water-flow-item="v-spu-preview"/>
+        </view>
+    </view>
+</l-loadmore>

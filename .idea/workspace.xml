@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Wechat mini program component js file" />
+        <option value="Wechat mini program component json file" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1VVpNIKi775Ry3k5kbUbhg4HsEV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="" />
+      <created>1577348074735</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577348074735</updated>
+      <workItem from="1577348077576" duration="1347000" />
+      <workItem from="1578235515485" duration="71000" />
+      <workItem from="1578236111437" duration="418000" />
+      <workItem from="1578236969006" duration="70000" />
+      <workItem from="1578237141774" duration="21000" />
+      <workItem from="1578237360247" duration="590000" />
+      <workItem from="1578238027505" duration="4591000" />
+      <workItem from="1578281744966" duration="7795000" />
+      <workItem from="1578488721216" duration="150000" />
+      <workItem from="1578490793806" duration="3198000" />
+      <workItem from="1578542391610" duration="10895000" />
+      <workItem from="1578578086400" duration="3648000" />
+      <workItem from="1578812072873" duration="45000" />
+      <workItem from="1578812161305" duration="9622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="88" key="#Notifications" timestamp="1578236977591">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="320" y="88" key="#Notifications/0.23.1440.800@0.23.1440.800" timestamp="1578236977591" />
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578577813692">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578577813692" />
+    <state x="144" y="121" key="IDE.errors.dialog" timestamp="1578502374198">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="144" y="120" key="IDE.errors.dialog/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1578492055661" />
+    <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.803/41.-745.1366.745@0.23.1440.803" timestamp="1578502374198" />
+    <state x="221" y="62" key="SettingsEditor" timestamp="1578237548852">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="221" y="62" key="SettingsEditor/0.23.1440.800@0.23.1440.800" timestamp="1578237548852" />
+    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup" timestamp="1578817084781">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578817084781" />
+    <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1578552877974" />
+  </component>
+</project>
