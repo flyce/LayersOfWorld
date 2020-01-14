@@ -1,8 +1,65 @@
+import { Cell } from "./cell";
+import {Joiner} from "../../utils/joiner";
+
 class SkuPending {
     pending = [];
+    size;
 
-    constructor() {
+    constructor(size) {
+        this.size = size;
+    }
 
+    init(sku) {
+        this.size = sku.specs.length;
+        for(let i = 0; i< sku.specs.length; ++i) {
+            const cell = new Cell(sku.specs[i]);
+            this.insertCell(cell, i);
+        }
+    }
+
+    getCurrentSpecValue() {
+        const values = this.pending.map(cell => {
+            return cell ? cell.spec.value : null;
+        });
+        return values;
+    }
+
+    getMissingSpecKeysIndex() {
+        const keysIndex = [];
+        for (let i = 0; i < this.size; ++i) {
+            if(!this.pending[i]) {
+                keysIndex.push(i);
+            }
+        }
+        return keysIndex;
+    }
+
+    getSkuCode() {
+        const joiner = new Joiner('#');
+        console.log(this.pending);
+        this.pending.forEach(cell => {
+            if(cell) {
+                const cellCode = cell.getCellCode();
+                joiner.join(cellCode);
+            }
+        });
+        return joiner.getStr();
+    }
+
+    isIntact() {
+       // if(this.size !== this.pending.length) {
+       //     return false;
+       // }
+       for(let i = 0; i < this.size; ++i) {
+            if(this._isEmptyPart(i)) {
+                return false;
+            }
+            return true;
+       }
+    }
+
+    _isEmptyPart(index) {
+        return !this.pending[index];
     }
 
     insertCell(cell, x) {

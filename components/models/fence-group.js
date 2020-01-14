@@ -11,6 +11,32 @@ class FenceGroup {
         this.skuList = spu.sku_list;
     }
 
+    getSku(skuCode) {
+        const fullSkuCode = this.spu.id + '$' + skuCode;
+        const sku = this.spu.sku_list.find(s => s.code === fullSkuCode);
+        return sku ? sku : null;
+    }
+
+    getDefaultSku() {
+        const defaultSkuId = this.spu.default_sku_id;
+        if(!defaultSkuId) {
+            return;
+        }
+        return this.skuList.find(s => s.id === defaultSkuId);
+    }
+
+    setCellStatusById(cellId, status) {
+        this.eachCell((cell) => {
+            if(cell.id === cellId) {
+                cell.status = status;
+            }
+        });
+    }
+
+    setCellStatusByXY(x, y , status) {
+        this.fences[x].cells[y].status = status;
+    }
+
     /***
      * 此方法不推荐 对fences[j] 赋值 不是传统面向对象的做法
      * */
@@ -37,6 +63,7 @@ class FenceGroup {
     initFencesTranspose() {
         const matrix = this._createMatrix(this.skuList);
         const fences = [];
+
         const AT = matrix.transpose();
         AT.forEach((r) => {
            const fence = new Fence(r);

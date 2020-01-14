@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/models/fence-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/fence-group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/models/judger.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/judger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/models/sku-pending.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/sku-pending.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/realm/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/realm/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Spu.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/Spu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,10 @@
       <workItem from="1578542391610" duration="10895000" />
       <workItem from="1578578086400" duration="3648000" />
       <workItem from="1578812072873" duration="45000" />
-      <workItem from="1578812161305" duration="10974000" />
+      <workItem from="1578812161305" duration="11521000" />
+      <workItem from="1578883930859" duration="2311000" />
+      <workItem from="1578983360441" duration="8049000" />
+      <workItem from="1578997333106" duration="7137000" />
     </task>
     <servers />
   </component>
@@ -94,23 +102,28 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="320" y="88" key="#Notifications/0.23.1440.800@0.23.1440.800" timestamp="1578236977591" />
-    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578577813692">
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578984906391">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578577813692" />
-    <state x="144" y="121" key="IDE.errors.dialog" timestamp="1578502374198">
-      <screen x="0" y="23" width="1440" height="803" />
-    </state>
-    <state x="144" y="120" key="IDE.errors.dialog/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1578492055661" />
-    <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.803/41.-745.1366.745@0.23.1440.803" timestamp="1578502374198" />
-    <state x="221" y="62" key="SettingsEditor" timestamp="1578237548852">
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800@0.23.1440.800" timestamp="1578984906391" />
+    <state x="144" y="121" key="IDE.errors.dialog" timestamp="1578992126715">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="221" y="62" key="SettingsEditor/0.23.1440.800@0.23.1440.800" timestamp="1578237548852" />
-    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup" timestamp="1578817084781">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state x="144" y="120" key="IDE.errors.dialog/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1578492055661" />
+    <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578992126715" />
+    <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.803/41.-745.1366.745@0.23.1440.803" timestamp="1578502374198" />
+    <state x="221" y="62" key="SettingsEditor" timestamp="1578990763338">
+      <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578817084781" />
+    <state x="221" y="62" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1578983333842" />
+    <state x="221" y="62" key="SettingsEditor/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578990763338" />
+    <state x="221" y="62" key="SettingsEditor/0.23.1440.800@0.23.1440.800" timestamp="1578237548852" />
+    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup" timestamp="1579011256802">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578983318432" />
+    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1579011256802" />
     <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1578552877974" />
   </component>
 </project>

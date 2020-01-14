@@ -10,12 +10,41 @@ class Judger {
 
     constructor(fenceGroup) {
         this.fenceGroup = fenceGroup;
-        this._initSkuPending();
         this._initPathDict();
+        this._initSkuPending();
+    }
+
+    isSkuIntcat() {
+        return this.skuPending.isIntact();
+    }
+
+    getCurrentValues() {
+        return this.skuPending.getCurrentSpecValue();
+    }
+
+    getMissingKeys() {
+        const missingKeysIndex = this.skuPending.getMissingSpecKeysIndex();
+        return missingKeysIndex.map(i => {
+           return this.fenceGroup.fences[i].title;
+        });
     }
 
     _initSkuPending() {
-        this.skuPending = new SkuPending();
+        const specsLength = this.fenceGroup.fences.length;
+        this.skuPending = new SkuPending(specsLength);
+        const defaultSku = this.fenceGroup.getDefaultSku();
+        if(!defaultSku) {
+            return;
+        }
+        this.skuPending.init(defaultSku);
+        this._initSelectedCell();
+        this.judge(null, null,null, true);
+    }
+
+    _initSelectedCell() {
+        this.skuPending.pending.forEach(cell => {
+            this.fenceGroup.setCellStatusById(cell.id, CellStatus.SELECTED);
+        });
     }
 
     _initPathDict() {
@@ -23,12 +52,12 @@ class Judger {
             const skuCode = new SkuCode(s.code);
             this.pathDict = this.pathDict.concat(skuCode.totalSegments);
         });
-        console.log(this.pathDict);
     }
 
-    judge(cell, x, y) {
-        this._changeCurrentCellStatus(cell, x, y);
-
+    judge(cell, x, y, isInit = false) {
+        if(!isInit) {
+            this._changeCurrentCellStatus(cell, x, y);
+        }
         this.fenceGroup.eachCell((cell, x, y) => {
             const path = this._findPotentialPath(cell, x, y);
             if (!path) {
@@ -36,11 +65,17 @@ class Judger {
             }
             const isIn = this._isInDict(path);
             if (isIn) {
-                this.fenceGroup.fences[x].cells[y].status = CellStatus.WAITING;
+                 this.fenceGroup.setCellStatusByXY(x, y, CellStatus.WAITING);
             } else {
-                this.fenceGroup.fences[x].cells[y].status = CellStatus.FORBIDDEN;
+                this.fenceGroup.setCellStatusByXY(x, y, CellStatus.FORBIDDEN);
             }
         });
+    }
+
+    getDeterminateSku() {
+        const code = this.skuPending.getSkuCode();
+        const sku = this.fenceGroup.getSku(code);
+        return sku;
     }
 
     _isInDict(path) {
@@ -82,11 +117,11 @@ class Judger {
      */
     _changeCurrentCellStatus(cell, x, y) {
         if(cell.status === CellStatus.WAITING) {
-           this.fenceGroup.fences[x].cells[y].status = CellStatus.SELECTED;
+           this.fenceGroup.setCellStatusByXY(x, y, CellStatus.SELECTED);
            this.skuPending.insertCell(cell, x);
         }
         if(cell.status === CellStatus.SELECTED) {
-            this.fenceGroup.fences[x].cells[y].status = CellStatus.WAITING;
+            this.fenceGroup.setCellStatusByXY(x, y, CellStatus.WAITING);
             this.skuPending.removeCell(x);
         }
     }
