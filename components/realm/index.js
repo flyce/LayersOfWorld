@@ -92,7 +92,6 @@ Component({
             const skuIntact = judger.isSkuIntcat();
             if(skuIntact) {
                 const currentSku = judger.getDeterminateSku();
-                console.log(currentSku);
                 this.bindSkuData(currentSku);
             }
             this.bindTipData();
