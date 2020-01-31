@@ -2,9 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/tab-bar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tab-bar/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tab-bar/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/tab-bar/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/cart@dis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/category.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/category@dis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/home@dis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/tabbar/my@dis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cart/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cart/cart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cart/cart.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cart/cart.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/category/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/category/category.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/category/category.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/category/category.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/my.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/my.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/my.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/sku-pending.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/sku-pending.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/enum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,23 +49,34 @@
       <list>
         <option value="Wechat mini program component js file" />
         <option value="Wechat mini program component json file" />
+        <option value="Wechat mini program page js file(Page API)" />
+        <option value="Wechat mini program page json file(Page API)" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1VVpNIKi775Ry3k5kbUbhg4HsEV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -44,7 +88,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -84,22 +128,32 @@
       <workItem from="1578812161305" duration="11521000" />
       <workItem from="1578883930859" duration="2311000" />
       <workItem from="1578983360441" duration="8049000" />
-      <workItem from="1578997333106" duration="7287000" />
+      <workItem from="1578997333106" duration="7799000" />
+      <workItem from="1580196201524" duration="1006000" />
+      <workItem from="1580199735834" duration="3591000" />
+      <workItem from="1580204142252" duration="903000" />
+      <workItem from="1580205050776" duration="64000" />
+      <workItem from="1580205128280" duration="3782000" />
+      <workItem from="1580301471593" duration="5000" />
+      <workItem from="1580478967925" duration="4458000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="320" y="88" key="#Notifications" timestamp="1578236977591">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="320" y="88" key="#Notifications/0.23.1440.800@0.23.1440.800" timestamp="1578236977591" />
-    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578984906391">
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580204264444">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
-    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578577813692" />
+    <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580204264444" />
     <state x="397" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.800@0.23.1440.800" timestamp="1578984906391" />
     <state x="144" y="121" key="IDE.errors.dialog" timestamp="1578992126715">
       <screen x="0" y="23" width="1440" height="800" />
@@ -107,17 +161,18 @@
     <state x="144" y="120" key="IDE.errors.dialog/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1578492055661" />
     <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578992126715" />
     <state x="144" y="121" key="IDE.errors.dialog/0.23.1440.803/41.-745.1366.745@0.23.1440.803" timestamp="1578502374198" />
-    <state x="221" y="62" key="SettingsEditor" timestamp="1578990763338">
-      <screen x="0" y="23" width="1440" height="800" />
+    <state x="221" y="62" key="SettingsEditor" timestamp="1580205114600">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state x="221" y="62" key="SettingsEditor/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1580205114600" />
     <state x="221" y="62" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1578983333842" />
     <state x="221" y="62" key="SettingsEditor/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578990763338" />
     <state x="221" y="62" key="SettingsEditor/0.23.1440.800@0.23.1440.800" timestamp="1578237548852" />
-    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup" timestamp="1579011256802">
+    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup" timestamp="1580201995432">
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578983318432" />
-    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1579011256802" />
+    <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580201995432" />
     <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1578552877974" />
   </component>
 </project>

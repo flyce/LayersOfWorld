@@ -1,20 +1,18 @@
 import { FenceGroup } from "../models/fence-group";
 import { Judger } from "../models/judger";
 import { Spu } from "../../model/Spu";
-import {Cell} from "../models/cell";
+import { Cell } from "../models/cell";
+import { Cart } from "../../model/cart";
 
 Component({
     properties: {
-        spu: Object
+        spu: Object,
+        orderWay: String
     },
     data: {
         judger: Object,
         previewImage: String,
-        title: String,
-        price: String,
-        discountPrice: String,
-        noSpec: Boolean,
-        skuIntact: Boolean
+        currentSkuCount: Cart.SKU_MIN_COUNT // 绑定服务端返回的最小购买数量
     },
     methods: {
         processNoSpec(spu) {
@@ -23,6 +21,7 @@ Component({
                 // isSkuIntact: false
             });
             this.bindSkuData(spu.sku_list[0]);
+            this.setStockStatus(spu.sku_list[0].stock, this.data.currentSkuCount);
         },
 
         processHasSpec(spu) {
@@ -34,6 +33,7 @@ Component({
             const defaultSku = fenceGroup.getDefaultSku();
             if (defaultSku) {
                 this.bindSkuData(defaultSku);
+                this.setStockStatus(defaultSku.stock, this.data.currentSkuCount);
             } else {
                 this.bindSpuData();
             }
@@ -81,6 +81,26 @@ Component({
             })
         },
 
+        setStockStatus(stock, currentCount) {
+            this.setData({
+                outStock: this.isOutOfStock(stock, currentCount)
+            });
+        },
+
+        isOutOfStock(stock, currentCount) {
+            return stock < currentCount;
+        },
+
+        onSelectCount(event) {
+            const currentCount = event.detail.count;
+            this.data.currentSkuCount = currentCount;
+
+            if(this.data.judger.isSkuIntcat()) {
+                const sku = this.data.judger.getDeterminateSku();
+                this.setStockStatus(sku.stock, currentCount);
+            }
+        },
+
         onCellTap(event) {
             const data = event.detail.cell;
             const { x, y } = event.detail;
@@ -93,6 +113,8 @@ Component({
             if(skuIntact) {
                 const currentSku = judger.getDeterminateSku();
                 this.bindSkuData(currentSku);
+                this.setStockStatus(currentSku.stock, this.data.currentSkuCount);
+                console.log(this.outStock);
             }
             this.bindTipData();
             this.bindFenceGroupData(judger.fenceGroup);

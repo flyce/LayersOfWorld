@@ -1,2 +1,9 @@
 <!--pages/detail/detail.wxml-->
-<v-realm spu="{{spu}}"></v-realm>
+<l-popup show="{{showRealm}}" content-align="bottom">
+    <v-realm order-way="{{orderWay}}" spu="{{spu}}"></v-realm>
+</l-popup>
+<v-tab-bar class="tabbar"
+        bind:gotohome="onGotoHome"
+        bind:gotocart="onGotoCart"
+        bind:addtocart="onAddToCart"
+        bind:buy="onBuy"/>
