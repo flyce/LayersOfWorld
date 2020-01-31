@@ -26,7 +26,7 @@ Component({
 
         processHasSpec(spu) {
             const fenceGroup = new FenceGroup(spu);
-            fenceGroup.initFencesTranspose();
+            fenceGroup.initFences();
             const judger = new Judger(fenceGroup);
             this.data.judger = judger;
 

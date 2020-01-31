@@ -11,18 +11,18 @@ class FenceGroup {
         this.skuList = spu.sku_list;
     }
 
-    getSku(skuCode) {
-        const fullSkuCode = this.spu.id + '$' + skuCode;
-        const sku = this.spu.sku_list.find(s => s.code === fullSkuCode);
-        return sku ? sku : null;
-    }
-
     getDefaultSku() {
         const defaultSkuId = this.spu.default_sku_id;
         if(!defaultSkuId) {
             return;
         }
         return this.skuList.find(s => s.id === defaultSkuId);
+    }
+
+    getSku(skuCode) {
+        const fullSkuCode = this.spu.id + '$' + skuCode;
+        const sku = this.spu.sku_list.find(s => s.code === fullSkuCode);
+        return sku ? sku : null;
     }
 
     setCellStatusById(cellId, status) {
@@ -60,22 +60,33 @@ class FenceGroup {
     // }
 
 
-    initFencesTranspose() {
+    initFences() {
         const matrix = this._createMatrix(this.skuList);
         const fences = [];
 
         const AT = matrix.transpose();
-        AT.forEach((r) => {
+        AT.forEach(r => {
            const fence = new Fence(r);
            fence.init();
+            if(this._hasSketchFence() && this._isSketchFence(fence.id)) {
+                fence.setFenceSketch(this.skuList);
+            }
            fences.push(fence);
         });
         this.fences = fences;
     }
 
+    _hasSketchFence() {
+        return this.spu.sketch_spec_id ? true : false;
+    }
+
+    _isSketchFence(fenceId) {
+        return this.spu.sketch_spec_id === fenceId ? true : false;
+    }
+
     eachCell(cb) {
-        for(let i = 0; i < this.fences.length; ++i) {
-            for (let j = 0; j < this.fences[i].cells.length; ++j) {
+        for(let i = 0; i < this.fences.length; i++) {
+            for (let j = 0; j < this.fences[i].cells.length; j++) {
                 const cell = this.fences[i].cells[j];
                 cb(cell, i, j)
             }

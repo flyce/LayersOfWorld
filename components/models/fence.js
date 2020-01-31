@@ -25,8 +25,18 @@ class Fence {
                 return;
             }
             const cell = new Cell(s);
-            this.cells.push(cell)
+            this.cells.push(cell);
         });
+    }
+
+    setFenceSketch(skuList) {
+        this.cells.forEach(c => {
+
+        });
+    }
+
+    _setCellSkuImg(cell, skuList) {
+
     }
 }
 
