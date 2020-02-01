@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/echo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/spu-description/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/spu-description/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/spu-description/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/spu-description/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/cell/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/cell/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/cell/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/cell/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/models/fence-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/fence-group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/fence.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/fence.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +24,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Wechat mini program component js file" />
-        <option value="Wechat mini program component json file" />
         <option value="Wechat mini program page js file(Page API)" />
         <option value="Wechat mini program page json file(Page API)" />
+        <option value="Wechat mini program component js file" />
+        <option value="Wechat mini program component json file" />
       </list>
     </option>
   </component>
@@ -105,12 +113,22 @@
       <workItem from="1580205128280" duration="3782000" />
       <workItem from="1580301471593" duration="5000" />
       <workItem from="1580478967925" duration="6752000" />
-      <workItem from="1580537956063" duration="1341000" />
+      <workItem from="1580537956063" duration="11514000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -138,12 +156,16 @@
     <state x="221" y="62" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1578983333842" />
     <state x="221" y="62" key="SettingsEditor/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1578990763338" />
     <state x="221" y="62" key="SettingsEditor/0.23.1440.800@0.23.1440.800" timestamp="1578237548852" />
-    <state x="741" y="148" width="670" height="682" key="search.everywhere.popup" timestamp="1580489475893">
-      <screen x="0" y="23" width="1440" height="805" />
+    <state x="544" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580549638429">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="544" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580549638429" />
+    <state x="741" y="147" width="670" height="676" key="search.everywhere.popup" timestamp="1580541620119">
+      <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578983318432" />
     <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580201995432" />
-    <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1578552877974" />
+    <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1580541620119" />
     <state x="741" y="148" width="670" height="682" key="search.everywhere.popup/0.23.1440.805/41.-745.1366.745@0.23.1440.805" timestamp="1580489475893" />
   </component>
 </project>

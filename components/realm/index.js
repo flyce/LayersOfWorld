@@ -57,6 +57,22 @@ Component({
             })
         },
 
+        triggerSpecEvent() {
+            const noSpec = Spu.isNoSpec(this.properties.spu);
+            if(noSpec) {
+                this.triggerSpecEvent('specchange', {
+                    noSpec: Spu.isNoSpec(this.properties.spu)
+                });
+            } else {
+                this.triggerSpecEvent('specchange', {
+                    noSpec: Spu.isNoSpec(this.properties.spu),
+                    skuIntact: this.data.judger.isSkuIntcat(),
+                    currentValues: this.data.judger.getCurrentValues(),
+                    missingKeys: this.data.judger.getMissingKeys()
+                });
+            }
+        },
+
         bindSkuData(sku) {
             this.setData({
                 previewImage: sku.img,
@@ -114,7 +130,6 @@ Component({
                 const currentSku = judger.getDeterminateSku();
                 this.bindSkuData(currentSku);
                 this.setStockStatus(currentSku.stock, this.data.currentSkuCount);
-                console.log(this.outStock);
             }
             this.bindTipData();
             this.bindFenceGroupData(judger.fenceGroup);
@@ -132,6 +147,7 @@ Component({
                 return;
             }
             this.processHasSpec(spu);
+            // this.triggerSpecEvent();
         }
     }
 });

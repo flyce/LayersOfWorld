@@ -42,5 +42,15 @@ Page({
       showRealm: true,
       orderWay: ShoppingWay.BUY
     });
+  },
+
+  onSpecChange(event) {
+    this.setData({
+      specs: event.detail
+    });
+  },
+
+  onShareAppMessage: function () {
+
   }
 });
