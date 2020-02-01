@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/cell.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/cell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/cell/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/cell/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/cell/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/components/cell/index.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/models/fence-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/fence-group.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/models/fence.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/fence.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,8 @@
       <workItem from="1580205050776" duration="64000" />
       <workItem from="1580205128280" duration="3782000" />
       <workItem from="1580301471593" duration="5000" />
-      <workItem from="1580478967925" duration="6316000" />
+      <workItem from="1580478967925" duration="6752000" />
+      <workItem from="1580537956063" duration="1341000" />
     </task>
     <servers />
   </component>

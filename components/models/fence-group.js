@@ -67,6 +67,7 @@ class FenceGroup {
         const AT = matrix.transpose();
         AT.forEach(r => {
            const fence = new Fence(r);
+           console.log(r);
            fence.init();
             if(this._hasSketchFence() && this._isSketchFence(fence.id)) {
                 fence.setFenceSketch(this.skuList);
