@@ -14,6 +14,22 @@ Component({
         previewImage: String,
         currentSkuCount: Cart.SKU_MIN_COUNT // 绑定服务端返回的最小购买数量
     },
+    observers: {
+        'spu': function (spu) {
+            if(!spu) {
+                return;
+            }
+            // 无规格商品处理
+            // sku_list = 1 && specs = 0 判定为无规则商品
+            if(Spu.isNoSpec(spu)) {
+                this.processNoSpec(spu);
+            }  else {
+                this.processHasSpec(spu);
+            }
+            // this.processHasSpec(spu);
+            this.triggerSpecEvent();
+        }
+    },
     methods: {
         processNoSpec(spu) {
             this.setData({
@@ -60,13 +76,13 @@ Component({
         triggerSpecEvent() {
             const noSpec = Spu.isNoSpec(this.properties.spu);
             if(noSpec) {
-                this.triggerSpecEvent('specchange', {
-                    noSpec: Spu.isNoSpec(this.properties.spu)
+                this.triggerEvent('specchange', {
+                    noSpec
                 });
             } else {
-                this.triggerSpecEvent('specchange', {
+                this.triggerEvent('specchange', {
                     noSpec: Spu.isNoSpec(this.properties.spu),
-                    skuIntact: this.data.judger.isSkuIntcat(),
+                    skuIntact: this.data.judger.isSkuIntact(),
                     currentValues: this.data.judger.getCurrentValues(),
                     missingKeys: this.data.judger.getMissingKeys()
                 });
@@ -75,7 +91,7 @@ Component({
 
         bindSkuData(sku) {
             this.setData({
-                previewImage: sku.img,
+                previewImg: sku.img,
                 title: sku.title,
                 price: sku.price,
                 discountPrice:sku.discount_price,
@@ -85,7 +101,7 @@ Component({
 
         bindTipData() {
             this.setData({
-                skuIntact: this.data.judger.isSkuIntcat(),
+                skuIntact: this.data.judger.isSkuIntact(),
                 currentValues: this.data.judger.getCurrentValues(),
                 missingKeys: this.data.judger.getMissingKeys()
             })
@@ -111,7 +127,7 @@ Component({
             const currentCount = event.detail.count;
             this.data.currentSkuCount = currentCount;
 
-            if(this.data.judger.isSkuIntcat()) {
+            if(this.data.judger.isSkuIntact()) {
                 const sku = this.data.judger.getDeterminateSku();
                 this.setStockStatus(sku.stock, currentCount);
             }
@@ -125,7 +141,7 @@ Component({
             cell.status = data.status;
             const { judger } = this.data;
             judger.judge(cell, x, y);
-            const skuIntact = judger.isSkuIntcat();
+            const skuIntact = judger.isSkuIntact();
             if(skuIntact) {
                 const currentSku = judger.getDeterminateSku();
                 this.bindSkuData(currentSku);
@@ -133,21 +149,7 @@ Component({
             }
             this.bindTipData();
             this.bindFenceGroupData(judger.fenceGroup);
-        }
-    },
-    observers: {
-        'spu': function (spu) {
-            if(!spu) {
-                return;
-            }
-            // 无规格商品处理
-            // sku_list = 1 && specs = 0 判定为无规则商品
-            if(Spu.isNoSpec(spu)) {
-                this.processNoSpec(spu);
-                return;
-            }
-            this.processHasSpec(spu);
-            // this.triggerSpecEvent();
+            this.triggerSpecEvent();
         }
     }
 });

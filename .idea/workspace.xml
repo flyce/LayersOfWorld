@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/sku-pending.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/sku-pending.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/models/judger.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/judger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/models/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/matrix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/realm/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +110,7 @@
       <workItem from="1580721152521" duration="143000" />
       <workItem from="1580824707250" duration="224000" />
       <workItem from="1580827328777" duration="4521000" />
-      <workItem from="1580836289121" duration="222000" />
+      <workItem from="1580836289121" duration="2632000" />
     </task>
     <servers />
   </component>
@@ -154,9 +157,10 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="544" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580549638429" />
-    <state x="741" y="147" width="670" height="676" key="search.everywhere.popup" timestamp="1580541620119">
-      <screen x="0" y="23" width="1440" height="800" />
+    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup" timestamp="1580838644131">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1580838644131" />
     <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578983318432" />
     <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580201995432" />
     <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1580541620119" />

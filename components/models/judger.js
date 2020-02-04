@@ -14,7 +14,7 @@ class Judger {
         this._initSkuPending();
     }
 
-    isSkuIntcat() {
+    isSkuIntact() {
         return this.skuPending.isIntact();
     }
 
