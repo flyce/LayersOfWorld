@@ -52,8 +52,10 @@ class SkuPending {
             if(this._isEmptyPart(i)) {
                 return false;
             }
-            return true;
+            // sku 规格选择出错是因为在此处return true;
        }
+       // 应该在循化外return true;
+       return true;
     }
 
     _isEmptyPart(index) {
