@@ -28,6 +28,26 @@
 
 }
 
+.explain {
+    margin-top: 10rpx;
+    background-color: #ffffff;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-img {
+    display: flex;
+    width: 100%;
+}
+
+.detail-img-container {
+    margin-bottom: 120rpx;
+}
+
 .specs > text:first-child {
     color: #999;
     font-size: 24rpx;

@@ -2,6 +2,7 @@
   "usingComponents": {
     "v-realm": "/components/realm/index",
     "v-tab-bar": "/components/tab-bar/index",
-    "v-spu-description": "/components/spu-description/index"
+    "v-spu-description": "/components/spu-description/index",
+    "v-sale-explain": "/components/sale-explain/index"
   }
 }
