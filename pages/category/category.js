@@ -51,13 +51,13 @@ Page({
         this.setData({
             currentSubs,
             currentBannerImg: currentRoot.img
-        })
+        });
     },
 
     onGotoSearch(event) {
         wx.navigateTo({
             url: `/pages/search/search`
-        })
+        });
     },
 
     onJumpSpuList(event) {
