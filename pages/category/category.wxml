@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="search-container">
+        <l-button
+                width="710"
+                height="60"
+                icon="research"
+                icon-size="24"
+                icon-color="#c4c9d2"
+                l-class="search-btn"
+                bind:lintap="onGotoSearch"
+                shape="square">
+            搜索商品
+        </l-button>
+    </view>
+    <view class="main">
+        <l-segment
+                height="{{segHeight}}"
+                even="{{false}}"
+                width="160"
+                scrollable
+                l-active-class="segment-item-active"
+                l-inactive-class="segment-item"
+                l-line-class="l-seg-line"
+                placement="left"
+                item-height="90"
+                bind:linchange="onSegChange"
+        >
+            <block wx:for="{{roots}}" wx:key="index">
+                <l-segment-item tab="{{item.name}}" key="{{item.id}}" />
+            </block>
+        </l-segment>
+        <view class="right">
+            <v-sub-category bind:itemtap="onJumpSpuList" categories="{{currentSubs}}" bannerImg="{{currentBannerImg}}" />
+        </view>
+    </view>
+</view>

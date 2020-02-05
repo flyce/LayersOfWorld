@@ -45,7 +45,7 @@
 }
 
 .detail-img-container {
-    margin-bottom: 120rpx;
+    margin-bottom: 20rpx;
 }
 
 .specs > text:first-child {

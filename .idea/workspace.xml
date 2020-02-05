@@ -2,12 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f31c9473-b7c1-4343-a638-b65d8d8118ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/sub-category/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sub-category/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sub-category/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sub-category/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/search/search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/search/search.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/search/search.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/spu-list/spu-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/spu-list/spu-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/spu-list/spu-list.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/spu-list/spu-list.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/system.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/judger.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/judger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/models/matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/models/matrix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/realm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/realm/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/realm/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/enum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/category.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/category.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/category.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/category.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/category.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +36,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Wechat mini program page js file(Page API)" />
-        <option value="Wechat mini program page json file(Page API)" />
         <option value="Wechat mini program component js file" />
         <option value="Wechat mini program component json file" />
+        <option value="Wechat mini program page js file(Page API)" />
+        <option value="Wechat mini program page json file(Page API)" />
       </list>
     </option>
   </component>
@@ -110,7 +129,8 @@
       <workItem from="1580721152521" duration="143000" />
       <workItem from="1580824707250" duration="224000" />
       <workItem from="1580827328777" duration="4521000" />
-      <workItem from="1580836289121" duration="2632000" />
+      <workItem from="1580836289121" duration="2721000" />
+      <workItem from="1580894546238" duration="10519000" />
     </task>
     <servers />
   </component>
@@ -157,13 +177,13 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="544" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580549638429" />
-    <state x="741" y="147" width="670" height="674" key="search.everywhere.popup" timestamp="1580838644131">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state x="741" y="148" width="670" height="682" key="search.everywhere.popup" timestamp="1580898079681">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797/41.-745.1366.745@0.23.1440.797" timestamp="1580838644131" />
     <state x="741" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1578983318432" />
     <state x="741" y="147" width="670" height="677" key="search.everywhere.popup/0.23.1440.800/41.-745.1366.745@0.23.1440.800" timestamp="1580201995432" />
     <state x="741" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1580541620119" />
-    <state x="741" y="148" width="670" height="682" key="search.everywhere.popup/0.23.1440.805/41.-745.1366.745@0.23.1440.805" timestamp="1580489475893" />
+    <state x="741" y="148" width="670" height="682" key="search.everywhere.popup/0.23.1440.805/41.-745.1366.745@0.23.1440.805" timestamp="1580898079681" />
   </component>
 </project>

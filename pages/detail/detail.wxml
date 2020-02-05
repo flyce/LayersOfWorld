@@ -1,5 +1,5 @@
 <!--pages/detail/detail.wxml-->
-<view class="container">
+<scroll-view style="height: {{h}}rpx;" class="container" scroll-y>
     <swiper class="top" autoplay
             indicator-dots>
         <block wx:for="{{spu.spu_img_list}}" wx:key="index" class="top" autoplay indicator-dots>
@@ -31,7 +31,7 @@
             <image mode="widthFix" src="{{item.img}}" class="detail-img"/>
         </block>
     </view>
-</view>
+</scroll-view>
 <l-popup show="{{showRealm}}" content-align="bottom">
     <v-realm bind:specchange="onSpecChange" order-way="{{orderWay}}" spu="{{spu}}"></v-realm>
 </l-popup>

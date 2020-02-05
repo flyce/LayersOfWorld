@@ -1,4 +1,5 @@
 {
   "usingComponents": {
+    "v-sub-category": "/components/sub-category/index"
   }
 }
