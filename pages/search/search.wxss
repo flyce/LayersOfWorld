@@ -13,6 +13,7 @@ page {
     z-index: 77;
     width: 750rpx;
     top: 0;
+    background-color: #ffffff;
 }
 
 .container {
